@@ -1,0 +1,161 @@
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.bundle.css";
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+.form-check{
+    color: black;
+    position: relative;
+    left: 45%;
+    top: 10px;
+    font-size: medium;
+    
+}
+
+.col-xl-2{
+    min-height: 65px;
+}
+
+.modal-content{
+    position: absolute;
+    top:100px;
+    left:60%;
+    height: 50vh;
+}
+.container{
+    position: relative;
+}
+
+.form-check-inline{
+    position: absolute;
+    top:15%;
+    margin-left: 2%;
+}
+.container.col{
+    background: red;
+}
+.form-control{
+    position: relative;
+    
+    top: 15px;
+
+}
+.btn-info{
+    position: relative;
+    left: 8%;
+    top: 15px;
+
+}
+
+#row-2{
+    min-height: 65px;
+    text-align: left;
+}
+#row-3{
+    min-height: 65px;
+}
+.row4{
+    position: relative;
+    min-height: 65px;
+    margin-bottom: 0px;
+ 
+
+
+}
+#drpdwn{
+    margin: 5px;
+}
+
+#filters{
+    position: relative;
+    font: 1em sans-serif;
+    font-size: larger;
+    color: #000;
+    left: 6%;
+    top: 20px;
+}
+#src{
+    position: relative;
+    font: 1em sans-serif;
+    font-size: larger;
+    top: 25px;
+    left: 1%;
+}
+#h{
+    color: red;
+}
+#dst{   
+    position: relative;
+    font: 1em sans-serif;
+    font-size: larger;
+    top: 25px;
+    left: 6%;
+}
+#arrow{
+    position: relative;
+    
+    top: 25px;
+    left: 4%;
+}
+#choosen_date{
+    position: relative;
+    font: 1em sans-serif;
+    font-size: larger;
+    top: 25px;
+    left: 10%;
+
+}
+#source {
+    border-bottom-color: black ;
+    border-top: none ;
+    border-left: none ;
+    border-right:  none ;
+    background: transparent;
+}
+#destination {
+    border-bottom-color: black ;
+    border-top: none ;
+    border-left: none ;
+    border-right:  none ;
+    background: transparent;
+}
+#arrival{
+    border-bottom-color: black ;
+    border-top: none ;
+    border-left: none ;
+    border-right:  none ;
+    background: transparent;
+}
+#departure{
+    border-bottom-color: black ;
+    border-top: none ;
+    border-left: none ;
+    border-right:  none ;
+    background: transparent;
+}
+#calender_logo{
+    position: relative;
+    top:30%;
+    color: #000;
+}
+#submit{
+    background-color: rgb(253, 152, 0);
+    border-color:  rgb(253, 152, 0);
+    color: #000;
+}
+#modify_button{
+    position: relative;
+    left: 2%;
+    top: 30%;
+
+}
+#sort_icon{
+    top: 35%;
+    color: #000;
+}
+#filter_icon{
+    top: 35%;
+    color: #000;
+}
+.icons{
+    position: relative;
+    left: 10%;
+}

@@ -1,0 +1,189 @@
+<!-- <app-dashboard></app-dashboard> -->
+<div class="container" >
+  <div class="row" id="first_row" style="background-color: rgb(246, 250, 245)">
+    <div class="col-xl-2 col-lg-2 d-none d-lg-block" >
+      <div class="row">
+        <div class="form-check">
+          <label class="form-check-label" for="radio1">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>one-way
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-check">
+          <label class="form-check-label" for="radio2">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">two-way
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="source" name="text2"  id="source"> 
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 " >
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Destination" name="text2" id="destination">
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6  col-6">
+      <div class="form-group">
+        <input type="date" class="form-control" placeholder="Date" name="text2" id="srcDate">
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6  col-6">
+      <div class="form-group">
+        <input type="date" class="form-control" placeholder="date" name="text2"  id="destDate" disabled>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col">
+      <button name="Submit" class="btn btn-info" (click)="Call()" id="submit" >Submit</button>      
+    </div>
+  </div>  
+</div>  
+  
+<div class="container">
+  <div id="row-2" class="row" style="background-color: rgb(246, 250, 245)">
+    <div class="col">
+      <span id="src" style="color: #000;">source</span><i class="fa fa-arrow-right" id="arrow" aria-hidden="true" style="color: #000"></i>
+      <span id="dst" style="color: #000;">destination</span>
+    </div> 
+    <div class="col" id= "txt" style="color: red">
+      </div>
+    <div class="col">
+      <span id="choosen_date" style="color: #000">choosen date</span>
+    </div>
+  </div>
+
+
+  <div id="row-3" class="row" style="background-color: rgb(246, 250, 245)">
+    <div class="col-2 d-none d-lg-block" id="filters" >
+      filters
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-2" >
+      <div class="dropdown">
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="drpdwn">   <i id="time_logo" class="fa fa-clock-o" ></i>
+          Time
+        </button>
+              <ul class="dropdown-menu dropdown-menu-form">
+                  <li><label class="checkbox"><input type="checkbox">5:00-11:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">11:00-16:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">16:00-24:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">24:00-5:00</label></li>
+                </ul>
+              
+              </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-2" >
+        <div class="dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="drpdwn" hidden-md-down><i class="material-icons" style="font-size:12px">edit_location</i>
+              B POINT
+            </button>
+            <ul class="dropdown-menu dropdown-menu-form">
+                <li><label class="checkbox"><input type="checkbox">ANAND VIHAR</label></li>
+                <li><label class="checkbox"><input type="checkbox">KASHMIRI GATE</label></li>
+                <li><label class="checkbox"><input type="checkbox">KAUSHAMBI</label></li>
+                <li><label class="checkbox"><input type="checkbox">VAISHALI</label></li>
+              </ul>
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-2" >
+    <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="material-icons" style="font-size:12px">edit_location</i>
+            D POINT
+          </button>
+          <ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">PURANIA</label></li>
+              <li><label class="checkbox"><input type="checkbox">KAISAR BAGH</label></li>
+              <li><label class="checkbox"><input type="checkbox">ALAM BAGH</label></li>
+              <li><label class="checkbox"><input type="checkbox">LUCKNOW</label></li>
+            </ul>
+        </div>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-2" >
+    <div class="dropdown">
+          
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="fa fa-bus" style="font-size:12px"></i>
+            operator
+          </button><ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">UPSRTC</label></li>
+              <li><label class="checkbox"><input type="checkbox">HONEY TRAVELS</label></li>
+              <li><label class="checkbox"><input type="checkbox">MONEY TRAVELS</label></li>
+  
+            </ul>
+          
+        </div>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-2" >
+      <div class="dropdown">
+          
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="material-icons" style="font-size:12px" >airline_seat_recline_normal</i>
+            Bus Type
+          </button>
+          <ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">SLEEPER</label></li>
+              <li><label class="checkbox"><input type="checkbox">SEATER</label></li>
+              <li><label class="checkbox"><input type="checkbox">VOLVO</label></li>
+              <li><label class="checkbox"><input type="checkbox">ORDINARY</label></li>
+            </ul>
+          
+        </div>
+  </div>
+  </div>
+  
+    </div>
+    <div class="container" id="empty">
+    <div style="background-color: aliceblue">
+  
+    </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-striped table-hover" [mfData]="data" #mf="mfDataTable" id="myTable" [mfRowsOnPage]="7" >
+              <thead>
+                <tr>
+                  <th> <mfDefaultSorter by="departureTime">Depart</mfDefaultSorter></th>
+                  <th> <mfDefaultSorter by="duration">Duration</mfDefaultSorter></th>
+                  <th> <mfDefaultSorter by="ArrivalTime">Arrival</mfDefaultSorter></th>
+                  <th> <mfDefaultSorter by="TravelsName">Travels</mfDefaultSorter></th>
+                  <th> <mfDefaultSorter by="SeatsAvailable">Seats</mfDefaultSorter></th>
+                  <th> <mfDefaultSorter by="fare">Price</mfDefaultSorter></th>
+                </tr>
+              </thead>
+              <tbody>
+                  
+                      <tr *ngFor="let user of mf.data">
+                          <td>{{user.departureTime}}</td>
+                          <td>{{user.duration}}</td>
+                          <td>{{user.ArrivalTime}}</td>
+                          <td>{{user.TravelsName}}</td>
+                          <td>{{user.SeatsAvailable}}</td>
+                          <td><tr>{{user.fare}}</tr></td>
+                      </tr>
+                  
+                
+              </tbody>
+              <tfoot>
+                <tr id="pagination">
+                  <td colspan="3">
+                    <mfBootstrapPaginator></mfBootstrapPaginator>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+      </div> 
+       
+    </div>
+    
+
+  
+     
+ 
+
+ 
+  
+
